@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Left</h2>
+            <div id="test"  draggable="true" class="row"  ondragstart="drag(event)">
+                <p>test</p>
+            </div>
+            <div id="test1" draggable="true" class="row" ondragstart="drag(event)">
+                <p>test</p>
+            </div>
+            <div id="test3" draggable="true" class="row" ondragstart="drag(event)">
+                <p>test</p>
+            </div>
+        </div>
+
+        <div  id="test2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Right</h2>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
